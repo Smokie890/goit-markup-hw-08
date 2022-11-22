@@ -76,8 +76,7 @@
         &__social {
             display: flex;
             flex-wrap: wrap;
-            justify-content: flex-start;
-            gap: 20px;
+            justify-content: flex-start;           
             margin-top: 64px;            
         }
         &__social-link{
@@ -90,6 +89,6 @@
         }
         &__mbv {
             color: rgba(33, 33, 33, 0.2);
-            margin-left: 10px;
+            margin: 0 10px;
         }
        }
