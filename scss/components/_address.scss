@@ -1,0 +1,43 @@
+.address {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    
+    @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
+    &__list:nth-child(-n + 2) {        
+        margin-bottom: 8px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 9px;
+    }
+
+    }
+
+    &__contact {
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--cap-text-color);
+        opacity: 0.6;
+        text-decoration: none;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--main-animation);
+    }
+
+    &__contact:hover {
+        color: var(--logo-text-color);
+        text-decoration: none;
+    }
+
+    &__contact:focus {
+        color: var(--logo-text-color);
+        text-decoration: none;
+    }
+
+    &__location {
+        opacity: 1;
+    }
+}

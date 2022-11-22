@@ -1,0 +1,23 @@
+.header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    z-index: 1;
+    border-bottom: 1px solid #ececec;
+    
+    @media (min-width: 768px) {
+            height: 80px;
+        }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        @media (min-width: 768px) {
+                padding: 0;
+            }
+    }    
+}

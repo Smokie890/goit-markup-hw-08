@@ -1,0 +1,40 @@
+.container {
+    width: 100vw;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (min-width: 768px) {
+            max-width: 768px;
+        }    
+                @media (min-width: 1200px) {
+                    max-width: 1200px;
+                }
+}
+
+.section {
+
+    @media (min-width: 1200px) {
+            padding: 94px 0;
+        }    
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+body.js-open-menu {
+    overflow: hidden;
+}

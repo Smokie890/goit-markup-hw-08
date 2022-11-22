@@ -1,0 +1,154 @@
+.modal {
+    position: absolute;
+    width: 100%;
+    max-width: 450px;
+    max-height: 609px;
+    top: 93px;
+    left: 50%;
+    background-color: white;
+    transform: translateX(-50%);
+    padding: 40px;
+    @media (min-width: 768px) {
+        top: 208px;
+    }
+    @media (min-width: 1200px) {
+            position: absolute;
+            width: 528px;
+            height: 581px;
+            top: 80px;
+            left: 50%;
+            background-color: white;
+            transform: translateX(-50%);
+            padding: 40px;
+        }
+
+    &__button--close {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        background: none;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+
+        &:hover {
+            fill: var(--logo-text-color);
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: var(--main-animation);
+        }
+
+        &:focus {
+            fill: var(--logo-text-color);
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: var(--main-animation);
+        }
+
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    &__label {
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        color: var(--paragraph-text-color);
+        letter-spacing: 0.01em;
+        margin-bottom: 4px;
+    }
+
+    &__form {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        fill: currentColor;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: var(--main-animation);
+
+        .modal__form:hover & {
+            fill: var(--logo-text-color);
+        }
+
+        .modal__form:focus-within & {
+            fill: var(--logo-text-color);
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 11px 12px 11px 32px;
+        border: 1px solid var(--border-second-color);
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: var(--main-animation);
+
+        &:focus,
+        &:hover {
+            border-color: var(--logo-text-color);
+        }
+    }
+
+    &__textarea {
+        display: block;
+        width: 100%;
+        padding: 12px 16px;
+        border: 1px solid var(--border-second-color);
+        border-radius: 4px;
+        outline: none;
+        height: 120px;
+        margin-bottom: 20px;
+        resize: none;
+
+        &:hover,
+        &:focus {
+            border-color: var(--logo-text-color);
+        }
+    }
+
+    &__button--send {
+        display: block;
+        padding: 10px 52px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        background-color: var(--logo-text-color);
+        color: var(--cap-text-color);
+        border: 0;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0 auto;
+        max-width: 200px;
+        margin-top: 30px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--main-animation);
+
+        &:hover,
+        &:focus {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.hero {
+    width: 100vw;
+    max-width: 480px;
+    margin-top: 60px;
+    margin-right: auto;  
+    margin-left: auto; 
+    padding: 118px 0;
+    background-color: var(--second-background-color);
+    color: var(--cap-text-color);
+    background-image: var(--gradient), url(../../image/fonimage_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-width: 768px) {
+        margin-top: 80px;
+        max-width: 768px;
+        background-image: var(--gradient), url(../../image/fonimage_tablet.jpg);
+        }
+                @media (min-width: 1200px) {
+                    padding: 200px 0;
+                    max-width: 1600px;
+                    background-image: var(--gradient), url(../../image/fonimage_desktop.jpg);
+                }
+
+    &__title {            
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.62;        
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            max-width: 360px;
+            @media (min-width: 1200px) {
+                    font-size: 44px;
+                    line-height: 1.36;
+                    max-width: 696px;
+                }             
+    }
+
+    &__button {
+        display: block;
+        padding: 10px 24px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        background-color: var(--logo-text-color);
+        color: var(--cap-text-color);
+        border: 0;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0 auto;        
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--main-animation);
+        @media (min-width: 1200px) {            
+            padding: 10px 32px;
+            }
+
+        &:hover,
+        &:focus {
+            background-color: var(--button-hover-color);
+        }
+    }
+}
