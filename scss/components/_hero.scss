@@ -7,7 +7,7 @@
     padding: 118px 0;
     background-color: var(--second-background-color);
     color: var(--cap-text-color);
-    background-image: var(--gradient), url("/image/fonimage-mobile.jpg");
+    background-image: var(--gradient), url(../../image/mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,28 +15,28 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {            
-                background-image: var(--gradient), url("/image/fonimage-mobile2x.jpg");            
+                background-image: var(--gradient), url(../../image/mobile@2x.jpg);            
         }
     @media (min-width: 768px) {
         margin-top: 80px;
         max-width: 768px;
-        background-image: var(--gradient), url("/image/fonimage-tablet.jpg");
+        background-image: var(--gradient), url(../../image/tablet.jpg);
         @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: var(--gradient), url("/image/fonimage-tablet2x.jpg");
+                background-image: var(--gradient), url(../../image/tablet@2x.jpg);
             }
         }
                 @media (min-width: 1200px) {
                     padding: 200px 0;
                     max-width: 1600px;
-                    background-image: var(--gradient), url("/image/fonimage-desktop.jpg");
+                    background-image: var(--gradient), url(../../image/desktop.jpg);
                     @media (min-device-pixel-ratio: 2),
                         (-webkit-min-device-pixel-ratio: 2),
                         (min-resolution: 192dpi),
                         (min-resolution: 2dppx) {
-                            background-image: var(--gradient), url("/image/fonimage-desktop@2x.jpg");
+                            background-image: var(--gradient), url(../../image/desktop@2x.jpg);
                         }
                 }
 
