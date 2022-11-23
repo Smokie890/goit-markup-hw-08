@@ -11,21 +11,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {            
-                background-image: var(--gradient), url(../../image/mobile@2x.jpg);            
+    @media (min-device-pixel-ratio: 2),        
+        (min-resolution: 192dpi) {            
+        background-image: var(--gradient), url(../../image/mobile@2x.jpg);            
         }
     @media (min-width: 768px) {
         margin-top: 80px;
         max-width: 768px;
         background-image: var(--gradient), url(../../image/tablet.jpg);
-        @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: var(--gradient), url(../../image/tablet@2x.jpg);
+        @media (min-device-pixel-ratio: 2),            
+            (min-resolution: 192dpi) {
+            background-image: var(--gradient), url(../../image/tablet@2x.jpg);
             }
         }
                 @media (min-width: 1200px) {
@@ -33,10 +29,8 @@
                     max-width: 1600px;
                     background-image: var(--gradient), url(../../image/desktop.jpg);
                     @media (min-device-pixel-ratio: 2),
-                        (-webkit-min-device-pixel-ratio: 2),
-                        (min-resolution: 192dpi),
-                        (min-resolution: 2dppx) {
-                            background-image: var(--gradient), url(../../image/desktop@2x.jpg);
+                        (min-resolution: 192dpi) {
+                        background-image: var(--gradient), url(../../image/desktop@2x.jpg);
                         }
                 }
 
