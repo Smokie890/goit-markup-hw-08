@@ -50,6 +50,10 @@
             letter-spacing: 0.02em;
             display: block;
             margin-bottom: 32px;
+
+            &--current {
+                    color: var(--logo-text-color);
+                }
         }
         &__contact{
             
@@ -87,7 +91,7 @@
             text-decoration: none;
             color: var(--logo-text-color);
         }
-        &__mbv {
+        &__symbol {
             color: rgba(33, 33, 33, 0.2);
             margin: 0 10px;
         }

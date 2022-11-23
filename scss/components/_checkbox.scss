@@ -3,9 +3,7 @@
 
     &__label {
         position: relative;
-        padding-left: 28px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
+        padding-left: 28px;        
         color: var(--paragraph-text-color);
 
         .checkbox & {
@@ -49,6 +47,24 @@
     }
 
     &__link {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
         color: var(--logo-text-color);
+        @media (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;            
+        }
+    }
+    &__link-span {
+        display: inline-block;
+        color: var(--paragraph-text-color);
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        @media (min-width: 1200px) {
+                font-size: 14px;
+                line-height: 1.71;
+            }
     }
 }
