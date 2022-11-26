@@ -5,7 +5,7 @@
         max-height: 796px;   
         top: 0;
         left: 0;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         background-color: white;        
         z-index: 1;
         
@@ -31,7 +31,10 @@
             cursor: pointer;
             border: none;
             border-radius: 50%;
-            outline: none;             
+            outline: none;
+            &:hover {
+                fill: var(--logo-text-color);
+            }         
         }
 
         &__nav {

@@ -1,7 +1,6 @@
 .team {
     background-color: var(--button-color);
 
-
     &__title {
         padding-top: 60px;
         text-align: center;
@@ -16,20 +15,17 @@
             }
             @media (min-width: 768px) {
                 padding-top: 0;
-                }
-
-        
+                }        
     }
 
-    &__list {
+    &__list {        
         padding-bottom: 60px;
 
         @media (min-width: 768px) {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 30px;
-        
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;        
             }
             @media (min-width: 1200px) {
                 padding-bottom: 0;
@@ -39,16 +35,16 @@
                 }
     }
 
-    &__item {
+    &__item {        
+        max-width: 450px;            
         margin-bottom: 30px;
         background-color: var(--main-background-color);
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
             &:last-child {
-                    margin-bottom: 0;
-                }
-            
+                margin-bottom: 0;
+                }            
             @media (min-width: 768px) {
                 width: 100vw;
                 max-width: 354px;
@@ -59,13 +55,7 @@
                     max-width: 270px;
                     margin-bottom: 0;
                     }
-
-    }
-    
-    &__image {
-        width: 100%;
-        
-    }
+    }  
 
     &__info {
         padding: 30px;

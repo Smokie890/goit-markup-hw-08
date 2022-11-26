@@ -115,27 +115,45 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img
-                src="./image/img(6).jpg"
-                alt="крупним планом зображення програміста, який працює на робочому столі в офісі"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop_applications.jpg    1x,
+                    ./image/desktop_applications@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/desktop_applications.jpg"
+                  alt="крупним планом зображення програміста, який працює на робочому столі в офісі"
+                />
+              </picture>
               <p class="work__text">Десктопні додатки</p>
             </li>
             <li class="work__item">
-              <img
-                src="./image/img(7).jpg"
-                alt="веб-дизайнери інтерфейсу розробляють додатки для смартфонів, команда творців працює над інтерфейсом мобільних телефонів"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./image/mobile_applications.jpg 1x, ./image/mobile_applications@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/mobile_applications.jpg"
+                  alt="веб-дизайнери інтерфейсу розробляють додатки для смартфонів, команда творців працює над інтерфейсом мобільних телефонів"
+                />
+              </picture>
               <p class="work__text">Мобільні додатки</p>
             </li>
             <li class="work__item">
-              <img
-                src="./image/img(8).jpg"
-                alt="веб-дизайнер із робочим графічним планшетом із вибором кольорів"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./image/design_solutions.jpg 1x, ./image/design_solutions@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/design_solutions.jpg"
+                  alt="веб-дизайнер із робочим графічним планшетом із вибором кольорів"
+                />
+              </picture>
               <p class="work__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -146,7 +164,21 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img class="team__image" src="./image/img(9).jpg" alt="Ігор Дем'яненко" />
+              <picture>
+                <source
+                  srcset="./image/igor_mobile.jpg 1x, ./image/igor_mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./image/igor_tablet.jpg 1x, ./image/igor_tablet@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./image/igor_desktop.jpg 1x, ./image/igor_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./image/igor_tablet.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <div class="team__info">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -180,7 +212,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__image" src="./image/img(10).jpg" width="270" alt="Ольга Рєпіна" />
+              <picture>
+                <source
+                  srcset="./image/olga_mobile.jpg 1x, ./image/olga_mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./image/olga_tablet.jpg 1x, ./image/olga_tablet@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./image/olga_desktop.jpg 1x, ./image/olga_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./image/igor_tablet.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <div class="team__info">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -213,7 +259,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__image" src="./image/img(11).jpg" width="270" alt="Микола Тарасов" />
+              <picture>
+                <source
+                  srcset="./image/mikola_mobile.jpg 1x, ./image/mikola_mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./image/mikola_tablet.jpg 1x, ./image/mikola_tablet@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./image/mikola_desktop.jpg 1x, ./image/mikola_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./image/mikola_tablet.jpg" alt="Микола Тарасов" />
+              </picture>
               <div class="team__info">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -246,12 +306,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./image/img(12).jpg"
-                width="270"
-                alt="Михайло Єрмаков"
-              />
+              <picture>
+                <source
+                  srcset="./image/mihaylo_mobile.jpg 1x, ./image/mihaylo_mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./image/mihaylo_tablet.jpg 1x, ./image/mihaylo_tablet@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./image/mihaylo_desktop.jpg 1x, ./image/mihaylo_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./image/mihaylo_tablet.jpg" alt="Михайло Єрмаков" />
+              </picture>
               <div class="team__info">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>
@@ -412,7 +481,7 @@
     </footer>
     <div class="mobile-menu js-menu-container">
       <button class="mobile-menu__close-button js-close-menu" type="button">
-        <svg width="8.33vw" height="8.33vh">
+        <svg width="40" height="40">
           <use href="./image/icons.svg#icon-close_burger"></use>
         </svg>
       </button>

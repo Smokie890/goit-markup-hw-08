@@ -68,9 +68,13 @@
         height: 100%;
         transform: translateY(100%);
         transition: transform 250ms;
-        padding: 63px 24px;
+        padding: 32px 20px;
         color: var(--cap-text-color);
         background-color: rgba(33, 150, 243, 0.9);
+
+        @media (min-width: 768px) {
+            padding: 63px 24px;
+        }
 
         .card__link:hover & {
             transform: translateY(0);
@@ -83,9 +87,14 @@
     }
 
     &__image-text {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.56;
         letter-spacing: 0.03em;
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
+        
     }
 
     &__title {
