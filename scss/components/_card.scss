@@ -17,8 +17,12 @@
         background: var(--main-background-color);
         &:last-child {
             margin-bottom: 60px;
+            @media (min-width: 1200px) {
+                margin-bottom: 0;
+            }
         }
         @media (min-width: 768px) {
+            margin-bottom: 0;
             max-width: 354px;
             }
         @media (min-width: 1200px) {
@@ -28,9 +32,11 @@
     }
 
     &__link {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         background-color: var(--main-background-color);
         text-decoration: none;
-        display: block;
 
         &:hover {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -101,6 +107,7 @@
         padding: 20px 24px;
         border: 1px solid var(--border-color);
         border-top: 0px;
+        flex-grow: 1;
     }
 
     &__name {

@@ -3,6 +3,9 @@
 
     &__label {
         position: relative;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
         padding-left: 28px;        
         color: var(--paragraph-text-color);
 
@@ -37,13 +40,10 @@
         .checkbox__input:checked+.checkbox__label & {
             opacity: 1;
         }
-
     }
 
     &__input {
         appearance: none;
-
-
     }
 
     &__link {
@@ -55,16 +55,5 @@
             font-size: 14px;
             line-height: 1.71;            
         }
-    }
-    &__link-span {
-        display: inline-block;
-        color: var(--paragraph-text-color);
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        @media (min-width: 1200px) {
-                font-size: 14px;
-                line-height: 1.71;
-            }
-    }
+    }    
 }

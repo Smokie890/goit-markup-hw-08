@@ -1,6 +1,7 @@
 .footer {
     background-color: var(--second-background-color);
     padding: 60px 0;
+    
 
     &__container {
         text-align: center;
@@ -14,7 +15,8 @@
             @media (min-width: 1200px) {
                 display: flex;
                 align-items: baseline;
-                gap: 93px;                
+                gap: 93px;     
+                text-align: left;           
             }
     }
     
@@ -24,6 +26,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--cap-text-color);
+        
     }
 
     &__list {
